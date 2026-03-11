@@ -1,19 +1,35 @@
-body{
+body {
     background-color: pink;
     font-family: 'Times New Roman', Times, serif;
-   margin:0;
-    text-align:center;
-    justify-content: center;
-    align-items:center;
-
-}
-.container{
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-
-
+    margin: 0;
+    text-align: center;
     
+    /* Flexbox to center everything on the page */
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures it takes up the full screen height */
+}
+
+/* Since you don't have a .container div in your HTML, 
+   the body properties above handle the centering. 
+   If you add a div class="container" later, use this: */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-primary {
+    /* Standard button styling */
+    padding: 10px 20px;
+    margin: 15px 0; /* Adds spacing above/below the button */
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
